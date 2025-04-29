@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:laboratory_work_7/profile/pages/registration_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'form_page.dart';
 import 'home_page.dart';
@@ -32,7 +33,7 @@ class _StartPageState extends State<StartPage> {
     } else {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const FormPage()),
+        MaterialPageRoute(builder: (context) => RegistrationScreen()),
       );
     }
   }
